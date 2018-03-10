@@ -41,6 +41,9 @@
 	width: 300px;
 	height: 50px;
 }
+#image input:hover{
+	background-color: #B4D45C;
+}
 .line0{
 	opacity: 0.95;
 	position: fixed;
@@ -57,6 +60,7 @@
 	height: 40px;
 }
 .line0 input{
+	opacity: 1; 
 	border: none;
 	margin-top: 15px;
 	margin-right: 160px;
@@ -70,13 +74,11 @@
 	height: 40px;
 }
 
-
-
-.bottom{
-	width: 100%;
-	height: 900px;
-	background-color: #F1F1F1;
+.line0 input:hover{
+	background-color: #E6ECF1;
 }
+
+
 #logo{
 	float: left;
 	margin-top: 80px;
@@ -101,6 +103,9 @@
 	font-weight: bold; 
 	font-family: Arial, Helvetica, sans-serif;
 	text-decoration: none;
+}
+#line1-text a:hover{
+	text-decoration: underline;
 }
 #p1{
 	opacity: 0.7;
@@ -189,7 +194,7 @@
 	height: 45px;
 }
 #btnANDROID p{
-		margin-top: 12px;
+	margin-top: 12px;
 	margin-left: 10px;
 	font-size: 16px;
 	font-weight: bold;
@@ -238,6 +243,12 @@
 	text-decoration: none;
 	color: #1CAFF6;
 }
+.line4 a:hover{
+	padding-bottom: 3px;
+	border-bottom: 3px solid ;
+	border-color:  #1CAFF6
+	text-decoration: underline;
+}
 #line4-cl1{
 	margin-left: 20%;
 	width: 25%;
@@ -257,7 +268,14 @@
 	background: linear-gradient(top, #0B3E71 0%, #0D64B0 100%);
 	background:-o-linear-gradient(top, #0B3E71, #0D64B0);
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
-
-
 }
-
+.bottom{
+	width: 100%;
+	height: 700px;
+	background-color: #F1F1F1;
+}
+.bottom #image1{
+	background-image: url('star.svg');
+	width: 100%;
+	height: 100%;
+}
