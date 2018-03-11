@@ -1,9 +1,15 @@
 .wraper {
+	font-family: Times, Times New Roman, Georgia, serif;
 	margin: -8px;
-	background-color: #003873;
+	padding: 0px;
+	/* background-color: #003873; */
+	/* border-collapse: collapse;  */
+	background-color: red;
 }
 .header{
-	width: 100%;
+	margin-top: -8px;
+	margin-left: -8px;
+	width: 101.12%;
 	height: 800px;
 	background-color: #003873;
 	background:-webkit-gradient(linear, left top, left bottom, from(#0B3E71), to(#0D64B0));
@@ -12,12 +18,12 @@
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
 }
 .header #image{
-	background-image: url('star.svg');
+	background-image: url('image/star.svg');
 	width: 100%;
 	height: 100%;
 }
 .header #image img{
-	margin: 100px;
+	margin: 50px;
 	width: 500px;
 	height: 500px;
 }
@@ -41,26 +47,40 @@
 	width: 300px;
 	height: 50px;
 }
-#image input:hover{
+#image input:hover {
 	background-color: #B4D45C;
+
+}
+#test{
+	display: none;
+	margin-left: 850px;
+	background-color: red;
+	width: 250px;
+	height: 100px;
 }
 .line0{
+		z-index: 999;
+	/* margin-top: -8px; */
+	margin-left: -8px;
 	opacity: 0.95;
 	position: fixed;
 	background-color: #003873;
 	width: 100%;
 	height: 70px;
 }
+
 .line0 img{
-	float: left;
-	opacity: 1;
+	display: inline-block;
 	margin-top: 20px;
 	margin-left: 180px;
 	width: 160px;
 	height: 40px;
 }
 .line0 input{
-	opacity: 1; 
+
+	position: relative;
+	float: right;
+	display: inline-block;
 	border: none;
 	margin-top: 15px;
 	margin-right: 160px;
@@ -68,12 +88,27 @@
 	font-weight: bold;
 	font-size: 16px;
 	border-radius: 20px;
-	float: right; 
 	background-color: white;
 	width: 120px;
 	height: 40px;
 }
+.line0 p{
 
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 500px;
+	display: inline-block;
+}
+.line0 i{
+	margin-top: 25px;
+	margin-left: 775px;
+	position: absolute;
+	color: white;
+	font-size: 25px;
+}
 .line0 input:hover{
 	background-color: #E6ECF1;
 }
@@ -87,7 +122,8 @@
 	height: 250px;
 }
 .line1{
-	width: 100%;
+	margin-left: -8px;
+	width: 101.11%;
 	height: 350px;
 	background-color: #F1F1F1;
 }
@@ -98,10 +134,11 @@
 	height: 100%;
 }
 #line1-text a{
+	margin-left: -5px;
 	font-size: 18px;
 	color: #1CB1F5;
 	font-weight: bold; 
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
 	text-decoration: none;
 }
 #line1-text a:hover{
@@ -117,17 +154,17 @@
 	font-size: 20px;
 }
 .line2{
+	padding-top: 1px;
 	width: 100%;
-	height: 450px;
+	height: 400px;
 	background-color: white;
 }
 .line2>p{
-	margin-top: 60px;
+	/* margin-top: 60px; */
 	font-size: 28px;
 	text-align: center;
 }
 .line2 div{
-	margin-top: 30px;
 	float: left;
 	width: 24%;
 	height: 60%;
@@ -138,7 +175,7 @@
 }
 .line2-column2 img{
 	width: 100%;
-	height: 100%;
+	height: 140%;
 }
 .line2-column3 p{
 	margin-left: 100px;
@@ -151,8 +188,11 @@
 	opacity: 0.6;
 	width: 80%;
 }
+
+
 .line3{
-	width: 100%;
+	margin-left: -8px;
+	width: 101.11%;
 	height: 300px;
 	background-color: #F1F1F1;
 }
@@ -227,7 +267,7 @@
 }
 .line4{
 	width: 100%;
-	height: 350px;
+	height: 320px;
 	background-color: white;
 }
 .line4 div{
@@ -246,8 +286,8 @@
 .line4 a:hover{
 	padding-bottom: 3px;
 	border-bottom: 3px solid ;
-	border-color:  #1CAFF6
-	text-decoration: underline;
+	border-color:  #1CAFF6;
+	/* text-decoration: underline; */
 }
 #line4-cl1{
 	margin-left: 20%;
@@ -255,7 +295,7 @@
 	height: 300px;
 }
 #line4-cl2{
-	padding-top: 30px;
+	padding-top: 50px;
 	width: 40%;
 	height: 300px;
 }
@@ -263,19 +303,43 @@
 	margin-left: 80px;
 }
 .bottom{
+	margin-left: -8px;
 	background-color: #0B3E71;
-	background:-webkit-gradient(linear, left top, left bottom, from(#0B3E71), to(#0D64B0));
+	width: 101.11%;
+	height: 700px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#0B3E71) , to(#0D64B0)) ;
 	background: linear-gradient(top, #0B3E71 0%, #0D64B0 100%);
 	background:-o-linear-gradient(top, #0B3E71, #0D64B0);
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
+	
 }
-.bottom{
-	width: 100%;
-	height: 700px;
-	background-color: #F1F1F1;
-}
-.bottom #image1{
-	background-image: url('star.svg');
+
+#image1{
+	background-image: url('image/star.svg');
 	width: 100%;
 	height: 100%;
+}
+#image1  p{
+	margin-left: -200px;
+	color: white;
+	padding-top: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+#image1 input{
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	border: none;
+	background-color: #94BC00;
+	margin-right: 400px;
+	margin-top: -70px;
+	float: right;
+	width: 200px;
+	height: 45px;
+	border-radius: 30px;
+}
+#image1 input:hover{
+	background-color: #B4D45C;
 }

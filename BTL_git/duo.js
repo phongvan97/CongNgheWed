@@ -1,29 +1,49 @@
 var ios=document.getElementById('btnIOS');
 ios.onmouseover=function change(){
 	var img=document.getElementById('imgIOS');
-	img.src="apple2.png";
+	img.src="image/apple2.png";
 	ios.style.backgroundColor = "#1CAFF6";
 	var txt=document.getElementById('txtIOS');
 	txt.style.color = '#F1F1F1';
 };
-ios.onmouseout=function chang2 () {
+ios.onmouseleave=function chang2() {
 	var img=document.getElementById('imgIOS');
-	img.src="apple1.png";
+	img.src="image/apple1.png";
 	ios.style.backgroundColor = "#F1F1F1";
 	var txt=document.getElementById('txtIOS');
 	txt.style.color = '#1CAFF6';
+};
+ios.onmousedown=function function_name () {
+	ios.style.backgroundColor = "#1C8DFF";
+};
+var x=document.getElementById("test");
+var divv=document.getElementById("ptest");
+divv.onmouseover=function forfun() {
+	x.style.display = "block";
+};
+
+divv.onmouseleave=function leave () {
+	x.style.display = "none";
 }
+
+
+
 
 $("#btnANDROID").hover(function(){
     $(this).css("background-color", "#1CAFF6");
-    $("#imgAndroid").attr("src","android2.png");
+    $("#imgAndroid").attr("src","image/android2.png");
     $("#txtAndroid").css("color", "#F1F1F1");
     }, function(){
     $(this).css("background-color", "#F1F1F1");
-    $("#imgAndroid").attr("src","android1.png");
+    $("#imgAndroid").attr("src","image/android1.png");
     $("#txtAndroid").css("color", "#1CAFF6");
 
 });
+$("#btnANDROID").mousedown(function() {
+	$(this).css("background-color", "#1C8DFF");
+});
+
+
 
 
 
