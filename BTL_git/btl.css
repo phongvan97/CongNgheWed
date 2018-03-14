@@ -1,15 +1,6 @@
-.wraper {
-	font-family: Times, Times New Roman, Georgia, serif;
-	margin: -8px;
-	padding: 0px;
-	/* background-color: #003873; */
-	/* border-collapse: collapse;  */
-	background-color: red;
-}
+
 .header{
-	margin-top: -8px;
-	margin-left: -8px;
-	width: 101.12%;
+	width: 100%;
 	height: 800px;
 	background-color: #003873;
 	background:-webkit-gradient(linear, left top, left bottom, from(#0B3E71), to(#0D64B0));
@@ -18,32 +9,39 @@
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
 }
 .header #image{
+	padding-left: 50px;
+	padding-top: 100px;
 	background-image: url('image/star.svg');
 	width: 100%;
 	height: 100%;
 }
 .header #image img{
-	margin: 50px;
-	width: 500px;
+
+	display: inline-block;
 	height: 500px;
 }
+#block{
+	margin-left: 150px;
+	display: inline-block;
+}
 #image h1{
+	font-weight: bold;
+	margin-bottom: 50px;
+	display: inline-block;
 	font-size: 36px;
 	color: white;
-	margin-right: 300px;
-	margin-top: 260px;
-	float: right;
+
 }
 #image input{
+	/* margin-top: 50px; */
+	margin-left: 40px;
+	display: block;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
 	border: none;
 	background-color: #94C500;
 	border-radius: 30px;
-	top: 45%;
-	left: 55%;
-	position: relative;
 	width: 300px;
 	height: 50px;
 }
@@ -51,18 +49,9 @@
 	background-color: #B4D45C;
 
 }
-#test{
-	display: none;
-	margin-left: 850px;
-	background-color: red;
-	width: 250px;
-	height: 100px;
-}
 .line0{
-		z-index: 999;
-	/* margin-top: -8px; */
-	margin-left: -8px;
-	opacity: 0.95;
+	z-index: 999;
+	opacity: 0.9;
 	position: fixed;
 	background-color: #003873;
 	width: 100%;
@@ -70,20 +59,19 @@
 }
 
 .line0 img{
-	display: inline-block;
 	margin-top: 20px;
-	margin-left: 180px;
+	margin-left: 200px;
+	float: left;
 	width: 160px;
 	height: 40px;
 }
-.line0 input{
 
-	position: relative;
-	float: right;
-	display: inline-block;
-	border: none;
+
+.line0 input{
 	margin-top: 15px;
-	margin-right: 160px;
+	margin-right: 100px;
+	float: right;
+	border: none;
 	color: #0B4176;
 	font-weight: bold;
 	font-size: 16px;
@@ -92,27 +80,34 @@
 	width: 120px;
 	height: 40px;
 }
-.line0 p{
 
-	font-size: 20px;
+
+
+#divhover{
+	float: right;
+	width: 300px;
+	height: 100%;
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
 	font-weight: bold;
-	color: white;
-	position: absolute;
-	margin-top: 25px;
-	margin-left: 500px;
-	display: inline-block;
 }
-.line0 i{
-	margin-top: 25px;
-	margin-left: 775px;
-	position: absolute;
-	color: white;
-	font-size: 25px;
+.listtest{
+	display: none;
+	margin-right: 300px;
+	float: right;
+	width: 200px;
+	height: 100px;
+	background-color: green;
 }
+
+
 .line0 input:hover{
+
 	background-color: #E6ECF1;
 }
-
 
 #logo{
 	float: left;
@@ -122,8 +117,7 @@
 	height: 250px;
 }
 .line1{
-	margin-left: -8px;
-	width: 101.11%;
+	width: 100%;
 	height: 350px;
 	background-color: #F1F1F1;
 }
@@ -191,8 +185,7 @@
 
 
 .line3{
-	margin-left: -8px;
-	width: 101.11%;
+	width: 100%;
 	height: 300px;
 	background-color: #F1F1F1;
 }
@@ -234,14 +227,14 @@
 	height: 45px;
 }
 #btnANDROID p{
-	margin-top: 12px;
+	margin-top: 10px;
 	margin-left: 10px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #1CAFF6
 }
 #btnIOS p{
-	margin-top: 12px;
+	margin-top: 10px;
 	margin-left: 10px;
 	font-size: 16px;
 	font-weight: bold;
@@ -303,15 +296,14 @@
 	margin-left: 80px;
 }
 .bottom{
-	margin-left: -8px;
 	background-color: #0B3E71;
-	width: 101.11%;
+	width: 100%;
 	height: 700px;
 	background:-webkit-gradient(linear, left top, left bottom, from(#0B3E71) , to(#0D64B0)) ;
 	background: linear-gradient(top, #0B3E71 0%, #0D64B0 100%);
 	background:-o-linear-gradient(top, #0B3E71, #0D64B0);
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
-	
+
 }
 
 #image1{
@@ -320,7 +312,7 @@
 	height: 100%;
 }
 #image1  p{
-	margin-left: -200px;
+	margin-left: -250px;
 	color: white;
 	padding-top: 100px;
 	text-align: center;
@@ -334,7 +326,7 @@
 	border: none;
 	background-color: #94BC00;
 	margin-right: 400px;
-	margin-top: -70px;
+	margin-top: -50px;
 	float: right;
 	width: 200px;
 	height: 45px;

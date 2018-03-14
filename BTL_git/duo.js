@@ -16,17 +16,6 @@ ios.onmouseleave=function chang2() {
 ios.onmousedown=function function_name () {
 	ios.style.backgroundColor = "#1C8DFF";
 };
-var x=document.getElementById("test");
-var divv=document.getElementById("ptest");
-divv.onmouseover=function forfun() {
-	x.style.display = "block";
-};
-
-divv.onmouseleave=function leave () {
-	x.style.display = "none";
-}
-
-
 
 
 $("#btnANDROID").hover(function(){
@@ -43,6 +32,12 @@ $("#btnANDROID").mousedown(function() {
 	$(this).css("background-color", "#1C8DFF");
 });
 
+
+var y=getElementsByClassName('listtest');
+var x=document.getElementById('divhover');
+x.onmouseover=function disp() {
+	alert('aaaaaa');
+};
 
 
 
