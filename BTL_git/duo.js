@@ -32,14 +32,18 @@ $("#btnANDROID").mousedown(function() {
 	$(this).css("background-color", "#1C8DFF");
 });
 
+$('.divhover').hover(function() {
+	$("#listtest").show();
+}, function() {
+	/* Stuff to do when the mouse leaves the element */
+	$("#listtest").hide();
+});
 
-var y=getElementsByClassName('listtest');
-var x=document.getElementById('divhover');
-x.onmouseover=function disp() {
-	alert('aaaaaa');
-};
-
-
+$('#listtest').hover(function() {
+	$(this).show();
+}, function() {
+	$(this).hide();
+});
 
 
 
