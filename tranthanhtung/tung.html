@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doulingo - Nghiên cứu</title>
+	<link rel="stylesheet" href="demo.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="gioithieu">
+		<div id="tabmenu">
+			<h1>Giới thiệu</h1>
+			<div class="tab">
+				<button style ="margin-left: 100px; background: transparent;" class="tablinks" onclick="openCity(event, 'London')">Tuyên ngôn</button>
+				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Paris')">Việc làm</button>
+				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Tokyo')">Nghiên cứu</button>
+				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Hanoi')">Liên hệ</button>
+			</div>
+		</div>
+
+
+
+		<div id="London" class="tabcontent">
+			<h3>Cá nhân hóa giáo dục</h3>
+			<p>Mỗi người đều có phương pháp học riêng. Lần đầu tiên trong lịch sử, lần đầu tiên trong lịch sử chúng tôi có thể phân tích từ cách thức học tập của hàng triệu người để tạo ra một hệ thống giáo dục hiệu quả, thích hợp nhất dành riêng cho từng học viên
+			</p>
+			<br>
+			<p>Mục tiêu lớn nhất của chúng tôi là làm cho người học trải nghiệm Duolingo như đang học với gia sư riêng.</p>
+			<img src="images/d.jpg" alt="">
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<h1>We are hiring</h1>
+			<h3>Business</h3>
+			<p>
+				Senior Account Executive
+				Entrepreneurial sales executive with a love for culture, language and education.
+				VP of Marketing
+				Help us take our brand -- already known to 200+ million learners worldwide -- to the next level.
+				Business Manager
+				Drive key strategic decisions via analysis, insight, and collaborative problem-solving.
+			</p> 
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<h1>Bài viết bởi nhân viên về sản phẩm của chúng tôi</h1>
+			<h3>Check out our blog for more research findings and analyses!</h3>
+			<p></p>
+		</div>
+		<div id="Hanoi" class="tabcontent">
+			<h3>Liên hệ</h3>
+			<p>Bạn đang gặp vấn đề à ? <a href="#">Tìm trợ giúp ở đây</a></p><br>
+			<p>Các nhà báo và blogger, vui lòng liên hệ: <a href="#">phongvan.com</a></p><br>
+			<p>Quảng cáo với chúng tôi: <a href="#">dungdongvaotao.com.vn </a></p><br>
+			<p>Chúng tôi không trả tiền cho dịch vụ quảng cáo. Vui lòng không liên hệ.</p>
+
+		</div>
+	</div>
+	<script>
+		function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
