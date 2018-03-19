@@ -9,33 +9,31 @@
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
 }
 .header #image{
-	padding-left: 50px;
-	padding-top: 100px;
 	background-image: url('image/star.svg');
 	width: 100%;
 	height: 100%;
 }
 .header #image img{
-
-	display: inline-block;
+	/* display: inline; */
+	margin-top: 5%;
+	margin-left: 5%;
+	width: 500px;
 	height: 500px;
 }
 #block{
-	margin-left: 150px;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 15%;
 	display: inline-block;
 }
 #image h1{
 	font-weight: bold;
-	margin-bottom: 50px;
-	display: inline-block;
 	font-size: 36px;
 	color: white;
-
 }
 #image input{
-	/* margin-top: 50px; */
-	margin-left: 40px;
-	display: block;
+	margin-top: 20px;
+	margin-left: 50px;
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
@@ -108,6 +106,10 @@
 ul{
 	list-style: none;
 }
+#listtest button:active,#listtest button:visited,#listtest button:focus{
+	outline: none;
+	border: none;
+}
 #listtest button{
 	border: none;
 	background-color: white;
@@ -138,7 +140,7 @@ ul{
 #logo{
 	float: left;
 	margin-top: 80px;
-	margin-left: 270px;
+	margin-left: 12%;
 	width: 250px;
 	height: 250px;
 }
@@ -148,9 +150,9 @@ ul{
 	background-color: #F1F1F1;
 }
 #line1-text{
-	margin-left: 80px;
+	margin-left: 5%;
 	float: left;
-	width: 550px;
+	width: 500px;
 	height: 100%;
 }
 #line1-text a{
@@ -338,7 +340,7 @@ ul{
 	height: 100%;
 }
 #image1  p{
-	margin-left: -250px;
+	margin-left: -15%;
 	color: white;
 	padding-top: 100px;
 	text-align: center;
@@ -351,7 +353,7 @@ ul{
 	color: white;
 	border: none;
 	background-color: #94BC00;
-	margin-right: 400px;
+	margin-right: 25%;
 	margin-top: -50px;
 	float: right;
 	width: 200px;
@@ -361,3 +363,22 @@ ul{
 #image1 input:hover{
 	background-color: #B4D45C;
 }
+.bot-about{
+	padding-top: 5%;
+	width: 1000px;
+	height: 100px;
+	margin:  auto;
+}
+.bot-about ul{
+	color: white;
+	width: 24.5%;
+	display: inline-block;
+}
+.bot-about li{
+	margin-top: 10px;
+}
+video{
+	display: none;
+	margin-top:   150px;
+}
+
