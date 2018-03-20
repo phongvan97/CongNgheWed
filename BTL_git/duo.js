@@ -33,17 +33,33 @@ $("#btnANDROID").mousedown(function() {
 	$(this).css("background-color", "#1C8DFF");
 });
 
+// $('.divhover').hover(function() {
+// 	$("#listtest").show();
+// }, function() {
+// 	$("#listtest").hide();
+// });
+
 $('.divhover').hover(function() {
-	$("#listtest").show();
+	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 }, function() {
-	/* Stuff to do when the mouse leaves the element */
-	$("#listtest").hide();
+	// $("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 });
+
+
+// $('.divhover').click(function() {
+// 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
+// });
 
 $('#listtest').hover(function() {
 	$(this).show();
 }, function() {
-	$(this).hide();
+	$(this).animate({ "height": "toggle" }, { duration: 300 });
+});
+$("#btn-dangnhap").click(function() {
+	// if ($("#formlogin").css(":display") == "none") {
+              
+ //            }
+            $("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
 });
 
 function TOEnglish () {
@@ -123,7 +139,21 @@ $("#test10").click(function() {
 });
 $("#4").click(function() {
 	$("#test10").css({display: 'block'});
-	$("#video1").trigger('play');
+	// $("#video1").trigger('play');
 	$("#video1").css('display', 'block');
+	// $("#video1").animate({ "opa": "toggle" }, { duration: 400 });
 });
 
+$(document).ready(function() {
+
+  $(".2").click(function() {
+     $("#image").load("a.html");
+    $("html, body").animate({scrollTop: 0}, 1000);
+	return false;
+
+	});
+});
+$("#logo1").click(function() {
+	location.reload();
+	// alert("message?: DOMString");
+});
