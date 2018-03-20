@@ -11,53 +11,112 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="gioithieu">
-		<div id="tabmenu">
-			<h1>Giới thiệu</h1>
-			<div class="tab">
-				<button style ="margin-left: 100px; background: transparent;" class="tablinks" onclick="openCity(event, 'London')">Tuyên ngôn</button>
-				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Paris')">Việc làm</button>
-				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Tokyo')">Nghiên cứu</button>
-				<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Hanoi')">Liên hệ</button>
+	<div class="fulloption">
+		<div class="gioithieu">
+			<div id="tabmenu">
+				<h1>Giới thiệu</h1>
+				<div class="tab">
+					<button style ="margin-left: 100px; background: transparent;" class="tablinks" onclick="openCity(event, 'London')">Tuyên ngôn</button>
+					<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Paris')">Việc làm</button>
+					<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Tokyo')">Nghiên cứu</button>
+					<button style=" background: transparent;" class="tablinks" onclick="openCity(event, 'Hanoi')">Liên hệ</button>
+				</div>
 			</div>
-		</div>
 
 
 
-		<div id="London" class="tabcontent">
-			<h3>Cá nhân hóa giáo dục</h3>
-			<p>Mỗi người đều có phương pháp học riêng. Lần đầu tiên trong lịch sử, lần đầu tiên trong lịch sử chúng tôi có thể phân tích từ cách thức học tập của hàng triệu người để tạo ra một hệ thống giáo dục hiệu quả, thích hợp nhất dành riêng cho từng học viên
-			</p>
-			<br>
-			<p>Mục tiêu lớn nhất của chúng tôi là làm cho người học trải nghiệm Duolingo như đang học với gia sư riêng.</p>
-			<img src="images/d.jpg" alt="">
-		</div>
+			<div id="London" class="tabcontent container-fluid">
+				<div class="col-md-8">
+					<h3 style="font-weight:bold;">Cá nhân hóa giáo dục</h3>
+					<p>Mỗi người đều có phương pháp học riêng. Lần đầu tiên trong lịch sử, lần đầu tiên trong lịch sử chúng tôi có thể phân tích từ cách thức học tập của hàng triệu người để tạo ra một hệ thống giáo dục hiệu quả, thích hợp nhất dành riêng cho từng học viên
+					</p>
+					<p>Mục tiêu lớn nhất của chúng tôi là làm cho người học trải nghiệm Duolingo như đang học với gia sư riêng.</p>
+					<h3 style="font-weight:bold;">Làm cho việc học vui hơn</h3>
+					<p>Học ngoại ngữ trực tuyến thường nhàm chán, nên chúng tôi tạo ra Duoling như một trò chơi để mọi người có động lực học kỹ năng mới mỗi ngày.</p>
+					<h3 style="font-weight:bold;">Được tiếp cận rộng rãi</h3>
+					<p>Có hơn 1.2 tỷ người đang học ngoại ngữ và phần lớn đang học vì muốn tiếp cận với nhiều cơ hội học tập hoặc làm việc tốt hơn. Đáng tiếc là quá trình dạy và học ngoại ngữ thường khá đắt đỏ, làm cho nhiều người không thể tiếp cận được.</p>
+					<p>Chúng tôi tạo ra Duolingo để tất cả mọi người đều có thể được học ngoại ngữ miễn phí - hoàn toàn không có chi phí ẩn hoặc nội dung phải trả tiền.</p>
+					<p>Duolingo được sử dụng phổ biến, từ người giàu nhất thế giới, các diễn viên Hollywood đến những em học sinh tại trường công ở các nước đang phát triển. Chúng tôi tin vào quyền bình đẳng, mọi người đều xứng đáng có được một nền giáo dục chất lượng cao dù họ giàu hay nghèo.</p>
 
-		<div id="Paris" class="tabcontent">
-			<h1>We are hiring</h1>
-			<h3>Business</h3>
-			<p>
-				Senior Account Executive
-				Entrepreneurial sales executive with a love for culture, language and education.
-				VP of Marketing
-				Help us take our brand -- already known to 200+ million learners worldwide -- to the next level.
-				Business Manager
-				Drive key strategic decisions via analysis, insight, and collaborative problem-solving.
-			</p> 
-		</div>
+				</div>
+				<div class="col-md-4">
+					<img src="images/anh1.jpg" alt="">
+					<img src="images/anh2.png" alt="">
+				</div>
+				
+				
+			</div>
 
-		<div id="Tokyo" class="tabcontent">
-			<h1>Bài viết bởi nhân viên về sản phẩm của chúng tôi</h1>
-			<h3>Check out our blog for more research findings and analyses!</h3>
-			<p></p>
-		</div>
-		<div id="Hanoi" class="tabcontent">
-			<h3>Liên hệ</h3>
-			<p>Bạn đang gặp vấn đề à ? <a href="#">Tìm trợ giúp ở đây</a></p><br>
-			<p>Các nhà báo và blogger, vui lòng liên hệ: <a href="#">phongvan.com</a></p><br>
-			<p>Quảng cáo với chúng tôi: <a href="#">dungdongvaotao.com.vn </a></p><br>
-			<p>Chúng tôi không trả tiền cho dịch vụ quảng cáo. Vui lòng không liên hệ.</p>
+			<div id="Paris" class="tabcontent">
+				<h2 style="text-align: center ";>We are hiring</h2>
+				<h3 style="font-weight:bold;">Business</h3><br>
+				<h4>Senior Account Executive</h4>
+				<p>Entrepreneurial sales executive with a love for culture, language and education.</p><br>
+				<h4>VP of Marketing</h4>	
+				<p>Help us take our brand -- already known to 200+ million learners worldwide -- to the next level.</p>	<br>
+				<h4>Business Manager</h4>	
+				<p>Drive key strategic decisions via analysis, insight, and collaborative problem-solving.</p><br><br><br>				
+				<h3 style="font-weight:bold;">Data, Research, & Analytics</h3><br>
+				<h4>Senior Research Scientist</h4>
+				<p>Take on important and challenging research problems with massive real-world data sets.</p><br>
+				<h4>Machine Learning Engineer (Natural Language)</h4>
+				<p>Develop natural language technologies that are used by millions every day.</p><br>			
+				<h4>Senior Data Analyst (Business Intelligence)</h4>
+				<p>Evaluate and improve gamified learning experiences for hundreds of millions.</p><br>
+				<h4>Machine Learning Engineer (Vision & Speech)</h4>
+				<p>Create intelligent AV technologies that define the future of learning and assessment.</p><br><br><br>
+				<h3 style="font-weight:bold;">Design</h3><br>
+				<h4>Product Designer</h4>
+				<p>A visionary designer with product experience.</p><br>
+				<h4>Product Design Intern</h4>
+				<p>Our interns shape the future of education.</p><br>
+				<h4>Senior Product Designer</h4>
+				<p>A visionary designer with product experience.</p>
+			</div>
 
+			<div id="Tokyo" class="tabcontent">
+				<h2 style="text-align: center";>Bài viết bởi nhân viên về sản phẩm của chúng tôi</h2>
+				<h3 style="text-align: center";>Check out our blog for more research findings and analyses!</h3><br><br>`
+				<p style="font-weight:bold;">INDEPENDENT STUDIES</p><br>
+				<p>Duolingo Effectiveness Study</p>
+				<p>R. Vesselinov and J. Grego (2012)</p>	
+				<p>City University of New York and University of South Carolina</p><br>	
+				<p>Validity, Reliability, and Concordance of the Duolingo English Test</p>	
+				<p>F. Ye (2014)</p>	
+				<p>University of Pittsburgh</p>	<br><br>
+				<p style="font-weight:bold;">CONFERENCE AND JOURNAL PUBLICATIONS</p><br>
+				<p>A Trainable Spaced Repetition Model for Language Learning</p>
+				<p>B. Settles and B. Meeder (2016)</p>	
+				<p>Proceedings of the Association for Computational Linguistics (ACL)</p><br>
+				<p>Mixture Modeling of Individual Learning Curves (Best Paper Award)</p>
+				<p>M. Streeter (2015)</p>	
+				<p>Proceedings of the International Conference on Educational Data Mining (EDM)</p>
+			</div>
+			<div id="Hanoi" class="tabcontent text-center">
+				<h3 >Liên hệ</h3>
+				<p>Bạn đang gặp vấn đề à ? <a href="#">Tìm trợ giúp ở đây</a></p><br>
+				<p>Các nhà báo và blogger, vui lòng liên hệ: <a href="#">phongvan.com</a></p><br>
+				<p>Quảng cáo với chúng tôi: <a href="#">baanhemsieunhan.com.vn </a></p><br>
+				<p>Chúng tôi không trả tiền cho dịch vụ quảng cáo. Vui lòng không liên hệ.</p>
+
+			</div>
+			<div class="footer">
+				<ul>
+					<li>Giới thiệu</li>
+					<li>Học đường</li>
+					<li>Dualingo English Test</li>
+					<li>Thiết bị di động</li>
+					<li>Phụ kiện</li>
+					<li>Trợ giúp</li>
+					<li>Nội quy</li>
+					<li>Việc làm</li>
+					<li>Điều khoản</li>
+				</ul>
+			</div>
+			<div class="text-center">
+				<i class="fa fa-facebook" style="font-size:25px; margin:10px;"></i>
+				<i class="fa fa-envelope" style="font-size:25px; margin:10px;"></i>
+			</div>
 		</div>
 	</div>
 	<script>
