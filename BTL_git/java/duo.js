@@ -39,16 +39,16 @@ $("#btnANDROID").mousedown(function() {
 // 	$("#listtest").hide();
 // });
 
-$('.divhover').hover(function() {
+$('.divhover').click(function() {
 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
-}, function() {
-	// $("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 });
-
-
-// $('.divhover').click(function() {
+// $('.divhover').hover(function() {
 // 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
+// }, function() {
+// 	// $("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 // });
+
+
 
 $('#listtest').hover(function() {
 	$(this).show();
@@ -56,12 +56,13 @@ $('#listtest').hover(function() {
 	$(this).animate({ "height": "toggle" }, { duration: 300 });
 });
 $("#btn-dangnhap").click(function() {
-	// if ($("#formlogin").css(":display") == "none") {
-              
- //            }
             $("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+             $("#formsignup").css("display","none");
 });
 
+$("#btn-form-create-account").click(function() {
+            $("#formsignup").animate({ "height": "toggle" }, { duration: 400 });
+});
 function TOEnglish () {
 	$("#0").text("Site Language: English");
 	$("#0").append("<i class='fa fa-angle-down'style='font-size: 25px; margin-left: 10px;'/i>");
@@ -139,9 +140,7 @@ $("#test10").click(function() {
 });
 $("#4").click(function() {
 	$("#test10").css({display: 'block'});
-	// $("#video1").trigger('play');
 	$("#video1").css('display', 'block');
-	// $("#video1").animate({ "opa": "toggle" }, { duration: 400 });
 });
 
 $(document).ready(function() {
@@ -152,8 +151,13 @@ $(document).ready(function() {
 	return false;
 
 	});
+
 });
 $("#logo1").click(function() {
 	location.reload();
-	// alert("message?: DOMString");
 });
+
+
+
+
+
