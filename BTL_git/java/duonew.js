@@ -56,14 +56,18 @@ $('#listtest').hover(function() {
 	$(this).animate({ "height": "toggle" }, { duration: 300 });
 });
 $("#btn-dangnhap").click(function() {
-            $("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
-             $("#formsignup").css("display","none");
+	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+	$("#formsignup").css("display","none");
 });
 
 $("#btn-form-create-account").click(function() {
-            $("#formsignup").animate({ "height": "toggle" }, { duration: 400 });
+	$("#formsignup").animate({ "height": "toggle" }, { duration: 400 });
 });
 function TOEnglish () {
+	$("#btn-form-sign-up").val("Sign Up");
+	$("#btn-form-create-account").val("Create an account");
+	$("#btn-form-login").val("Login");
+	$("#nameuser").val("Account");
 	$("#0").text("Site Language: English");
 	$("#0").append("<i class='fa fa-angle-down'style='font-size: 25px; margin-left: 10px;'/i>");
 	$("#btn-dangnhap").val('Login');
@@ -93,6 +97,10 @@ function TOEnglish () {
 }
 
 function ToVnese () {
+	$("#btn-form-sign-up").val("Đăng Ký");
+	$("#btn-form-create-account").val("Tạo Tài Khoản");
+	$("#btn-form-login").val("Đăng Nhập");
+	$("#nameuser").val("Tài Khoản");
 	$("#0").text("Ngôn Ngữ Hiển Thị : Tiếng Việt");
 	$("#0").append("<i class='fa fa-angle-down'style='font-size: 25px; margin-left: 10px;'/i>");
 	$("#btn-dangnhap").val('Đăng Nhập');
@@ -145,10 +153,10 @@ $("#4").click(function() {
 
 $(document).ready(function() {
 
-  $(".2").click(function() {
-     $("#image").load("a.html");
-    $("html, body").animate({scrollTop: 0}, 1000);
-	return false;
+	$(".2").click(function() {
+		$("#image").load("a.html");
+		$("html, body").animate({scrollTop: 0}, 1000);
+		return false;
 
 	});
 

@@ -1,18 +1,17 @@
 <?php
 $getuser=$_GET['q'];
-
+$getpass=$_GET['w'];
 $link=mysqli_connect('localhost','phong2','trecongtu1234','duolingo');
 if(!$link){
-	echo "thatbai";
+	echo "Ket Noi That Bai";
 }else{
-	$sql="select * from user where username='$getuser'";
+	$sql="select * from user where username='$getuser'and password='$getpass'";
 	$kq=mysqli_query($link,$sql);
 	if(mysqli_num_rows($kq)>0){
-		echo "co user";
-		// while($row=mysqli_fetch_assoc($kq)){
-		// 	echo $row['username']."-".$row['password'];
+		echo "Đăng nhập Thành Công";
 	}else{
-		echo "user k ton tai";
+		echo "Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng";
 	}
 }
+mysqli_close($link);
 ?>

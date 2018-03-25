@@ -117,11 +117,13 @@
 	width: 160px;
 	height: 40px;
 }
-
+#nameuser{
+	width: 150px;
+	float: right;
+}
 
 .line0 input{
 	margin-top: 15px;
-	margin-right: 100px;
 	float: right;
 	border: none;
 	color: #0B4176;
@@ -188,6 +190,7 @@ ul{
 	outline: none;
 	border: none;
 }
+
 #listtest button{
 	border: none;
 	background-color: white;
