@@ -62,7 +62,7 @@
 	background:-moz-linear-gradient(top, #0B3E71, #0D64B0);
 }
 .header #image{
-	background-image: url('image/star.svg');
+	background-image: url('../image/star.svg');
 	width: 100%;
 	height: 100%;
 }
@@ -416,7 +416,7 @@ ul{
 }
 
 #image1{
-	background-image: url('image/star.svg');
+	background-image: url('../image/star.svg');
 	width: 100%;
 	height: 100%;
 }

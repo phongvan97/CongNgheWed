@@ -33,27 +33,13 @@ $("#btnANDROID").mousedown(function() {
 	$(this).css("background-color", "#1C8DFF");
 });
 
-// $('.divhover').hover(function() {
-// 	$("#listtest").show();
-// }, function() {
-// 	$("#listtest").hide();
-// });
-
 $('.divhover').click(function() {
 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 });
-// $('.divhover').hover(function() {
-// 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
-// }, function() {
-// 	// $("#listtest").animate({ "height": "toggle" }, { duration: 400 });
-// });
-
-
 
 $('#listtest').hover(function() {
 	$(this).show();
 }, function() {
-	$(this).animate({ "height": "toggle" }, { duration: 300 });
 });
 $("#btn-dangnhap").click(function() {
 	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
@@ -62,6 +48,7 @@ $("#btn-dangnhap").click(function() {
 
 $("#btn-form-create-account").click(function() {
 	$("#formsignup").animate({ "height": "toggle" }, { duration: 400 });
+	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
 });
 function TOEnglish () {
 	$("#btn-form-sign-up").val("Sign Up");
@@ -75,7 +62,7 @@ function TOEnglish () {
 	$('.2').val("Get Start !");
 	$('#p1').text("The Best Way To Learn New Language");
 	$('#p2').text("Studying with Duolingo, you will find it very fun and attractive. Spend a lot of points from right answers, quick answers before time runs out or level up. Our compact lessons were very effective, and there was one");
-	$('#p2').append("<a id='3' href='#' style='margin-left: 10px; color: #000;'></a>");
+	$('#p2').append("<a id='3' href='../tranthanhtung/tung.html' style='margin-left: 10px; color: #000;'></a>");
 	$("#3").text("study demonstrates this.");
 	$("#4").text("See how we do it.");
 	$("#4").append("<i class='fa fa-youtube-play'style='font-size: 30px; margin-left: 10px ;'/i>");
@@ -108,9 +95,8 @@ function ToVnese () {
 	$('.2').val("Bắt Đầu !");
 	$('#p1').text("Cách tốt nhất để học một ngôn ngữ");
 	$('#p2').text("Học cùng Duolingo, bạn sẽ thấy rất vui và cuốn hút. Dành nhiều điểm từ các câu trả lời đúng, trả lời nhanh trước khi hết thời gian hay lên cấp. Những bài học nhỏ gọn của chúng tôi rất hiệu quả, và đã có một");
-	$('#p2').append("<a id='3' href='#' style='margin-left: 10px; color: #000;'></a>");
+	$('#p2').append("<a id='3' href='../tranthanhtung/tung.html' style='margin-left: 10px; color: #000;'></a>");
 	$("#3").text("nghiên cứu chứng minh điều này.");
-
 	$("#4").text("Xem cách chúng tôi làm.");
 	$("#4").append("<i class='fa fa-youtube-play'style='font-size: 30px; margin-left: 10px ;'/i>");
 	$("#5").text("Mỗi Bài Học Đều Được Trò Chơi Hóa.");

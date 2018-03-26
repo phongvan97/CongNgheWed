@@ -1,9 +1,10 @@
 <?php
 $getname=$_GET['a'];
 $getpass=$_GET['b'];
-$link=mysqli_connect('localhost','phong2','trecongtu1234','duolingo');
+require_once('config.php');
+$link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
-	echo 'that bai';
+	echo 'Kết Nối DB Thất Bại';
 }else{
 	$sql="INSERT INTO user (username, password) VALUES ('$getname','$getpass')";
 	$kq=mysqli_query($link,$sql);
@@ -13,6 +14,5 @@ if(!$link){
 		echo "Tên Đăng Nhập Đã Tồn Tại";
 	}
 }
-
 mysqli_close($link);
 ?>
