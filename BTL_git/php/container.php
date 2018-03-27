@@ -7,14 +7,6 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
 <div class="line2"> 
  <p id="5"></p>
  <div class="line2-column1">

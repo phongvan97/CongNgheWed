@@ -1,5 +1,4 @@
-		<div id="test10" ></div>
-		<video id="video1" src="video/clip.mp4" controls loop autoplay preload="auto" ></video> 
+
 		<div class="line0">
 			<img id="logo1" src="image/textlogo.png" >
 			<input type="button" id="nameuser" value="Account">

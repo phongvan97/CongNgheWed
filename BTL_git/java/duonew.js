@@ -95,7 +95,7 @@ function ToVnese () {
 	$('.2').val("Bắt Đầu !");
 	$('#p1').text("Cách tốt nhất để học một ngôn ngữ");
 	$('#p2').text("Học cùng Duolingo, bạn sẽ thấy rất vui và cuốn hút. Dành nhiều điểm từ các câu trả lời đúng, trả lời nhanh trước khi hết thời gian hay lên cấp. Những bài học nhỏ gọn của chúng tôi rất hiệu quả, và đã có một");
-	$('#p2').append("<a id='3' href='../tranthanhtung/tung.html' style='margin-left: 10px; color: #000;'></a>");
+	$('#p2').append("<a id='3' href='view/tung.html' style='margin-left: 10px; color: #000;'></a>");
 	$("#3").text("nghiên cứu chứng minh điều này.");
 	$("#4").text("Xem cách chúng tôi làm.");
 	$("#4").append("<i class='fa fa-youtube-play'style='font-size: 30px; margin-left: 10px ;'/i>");
@@ -140,16 +140,16 @@ $("#4").click(function() {
 $(document).ready(function() {
 
 	$(".2").click(function() {
-		$("#image").load("a.html");
-		$("html, body").animate({scrollTop: 0}, 1000);
+		$("#image").load("view/a.html");
+		$("html, body").animate({scrollTop: 0}, 800);
 		return false;
-
 	});
 
 });
 $("#logo1").click(function() {
 	location.reload();
 });
+// $(function() {  alert("asdsad");    })
 
 
 

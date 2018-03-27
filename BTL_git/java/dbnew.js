@@ -50,7 +50,6 @@ function checkuser (username1,passw1) {
 				$("#nameuser").val(name);
 				$("#txt-form-username").val('');
 				$("#txt-form-pass").val('');
-
 			}
 			alert(kq);
 		}

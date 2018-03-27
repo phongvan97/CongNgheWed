@@ -1,7 +1,8 @@
 <?php
 $getuser=$_GET['q'];
 $getpass=$_GET['w'];
-$link=mysqli_connect('localhost','phong2','trecongtu1234','duolingo');
+require_once('config.php');
+$link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
 	echo "Ket Noi That Bai";
 }else{

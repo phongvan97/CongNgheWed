@@ -6,6 +6,6 @@
 	$("#div1").css("opacity","0");
 });
 
-$("#but1").click(function() {
-	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
-});
+// $("#but1").click(function() {
+// 	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+// });

@@ -14,7 +14,8 @@
 </head>
 <body>
 <div class="wrapper">
-
+		<div id="test10" ></div>
+		<video id="video1" src="video/clip.mp4" controls loop autoplay preload="auto" ></video> 
 <?php include('php/line0.php'); ?> 
 
 <?php include('php/header.php'); ?> 
