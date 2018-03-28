@@ -3,6 +3,7 @@
 <head>
 	<title>Duolingo dành cho Học đường</title>
 	<meta name="name" content="content" charset="UTF8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.css">
@@ -13,23 +14,21 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div id="header">
-			<h1>duolingo | dành cho học đường</h1>
+		<div class="line0">
+			<h2>duolingo | dành cho học đường</h2>
 			<div class="dropdown">
-  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Chia sẻ
-  				<span class="caret"></span></button>
-  				<ul class="dropdown-menu">
-    				<li><a href="#">Email</a></li>
-    				<li><a href="#">Facebook</a></li>
-    				<li><a href="#">Twitter</a></li>
-    				<li><a href="#">Google+</a></li>
-  				</ul>
+  				<button class="dropbtn">Chia sẻ</button>
+  					<div class="dropdown-content">
+    					<a href="#">Facebook</a>
+    					<a href="#">Email</a>
+    					<a href="#">Twitter</a>
+  					</div>
 			</div>
-			<div>
-				<button type="button" class="btn btn-success">Đăng nhập</button>
-			</div>
+		</div>
+		<div id="header">
+			<img src="Capture.PNG" alt="">
 			<h2>Đưa nền tảng học tập ngôn ngữ phổ biến nhất thế giới vào lớp học của bạn.</h2>
-			<button type="button" class="btn btn-success">Bắt Đầu Ngay</button>
+			<input id="btn-start" type="button" value="Bắt Đầu Ngay">
 		</div>
 		<div class="row">
   			<div class="col-sm-6">
@@ -45,8 +44,10 @@
 		<div id="mid">
 			<h4>Over 200 million people around the world use Duolingo to help them learn languages. The fun, game-like lessons keep students motivated and excited about language. Best of all, as studies by the City University of New York and others have shown - it really works!</h4>
 			<div id="more">
-				<a href="Duolingo.mp4">Xem video (1 phút)</a>
-				<a href="DuolingoReport_Final.pdf">Xem nghiên cứu về mức độ hiệu quả</a>
+				<ul>
+					<li><a href="Duolingo.mp4">Xem video (1 phút)</a></li>
+					<li><a href="DuolingoReport_Final.pdf">Xem nghiên cứu về mức độ hiệu quả</a></li>
+				</ul>
 			</div>
 			
 		</div>
@@ -64,6 +65,8 @@
 					<li>Điều khoản</li>
 					<li>Quyền riêng tư</li>
 					<li>Doulingo.com</li>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-facebook"></i>
 				</ul>
 		</div>
 	</div>
