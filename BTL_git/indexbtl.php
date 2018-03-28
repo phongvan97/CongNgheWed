@@ -25,7 +25,7 @@
 <?php include('php/footer.php'); ?> 
 
 </div>
-<script src="java/duonew.js"></script>
-<script src="java/dbnew.js"></script>
+<script src="java/script.js"></script>
+<script src="java/database.js"></script>
 </body>
 </html>

@@ -179,7 +179,7 @@
 ul{
 	list-style: none;
 }
-#listtest button:active,#listtest button,#listtest button:focus,input:active,input:visited,input:focus{
+/* #listtest button:active,#listtest button,#listtest button:focus,input:active,input:visited,input:focus{
 	outline: none;
 	border: none;
 }
@@ -187,8 +187,10 @@ ul{
 .line3 button:focus {
 	outline: none;
 	border: none;
+} */
+button,input{
+	outline: none;
 }
-
 #listtest button{
 	border: none;
 	background-color: white;

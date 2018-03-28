@@ -1,5 +1,5 @@
+
 $(function(){
-	// alert("ád");
 	$("#btn-form-login").click(function() {
 		checkuser($("#txt-form-username").val(),$("#txt-form-pass").val());
 	});
@@ -15,9 +15,25 @@ $(function(){
 			createAccount($("#txt-signup-username").val(),$("#txt-signup-repass").val())
 		}
 	});
-
+	$('.item').click(function() {
+		alert($(this).attr('value'));
+	});
 });
 
+// function getscore_level () {
+// 	var username='anh';
+// 	var http=new XMLHttpRequest();
+// 	http.onreadystatechange=function () {
+// 		if(http.readyState==4 && http.status==200){
+// 			var kq=http.responseText.split(' ');
+// 			alert(kq[0]+'b'+kq[1]);
+// 			$('.score').text(kq[1]);
+// 			$('.level').text(kq[0]);
+// 		}
+// 	}
+// 	http.open('GET','php/getDetailUser.php?m='+username,true);
+// 	http.send();
+// }
 
 function createAccount (user,pass) {
 	var name =user;

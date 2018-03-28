@@ -1,4 +1,3 @@
-
 		<div class="line0">
 			<img id="logo1" src="image/textlogo.png" >
 			<input type="button" id="nameuser" value="Account">

@@ -11,14 +11,13 @@ if(!$link){
 			
 		while ($row=mysqli_fetch_assoc($kq)) {
 			$hienthi='<div class="item" value="'.$row['id'].'"><div class="img-item" style="background-image:'." url(".$row['image'].');'.'"></div><p>'.$row['namelevel'].'</p></div>'.'<br>';
-			// $hienthi='<div class="item" value="'.$row['id'].'"><div class="img-item" style="background-image:url('.$row['image'].');"><div><p>'.$row['namelevel'].'</p></div>';
 			echo $hienthi;
 		}
 	}else{
-
+		echo "khong co ban ghi nao";
 	}
 
-	// $hienthi='<div class="item"><div class="img-item" style="background-image:'." url('../image/anh2.png');".'"></div><p>Cơ Bản</p></div>';
+
 	
 }
 
