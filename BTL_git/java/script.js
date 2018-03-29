@@ -42,13 +42,16 @@ $('#listtest').hover(function() {
 }, function() {
 });
 $("#btn-dangnhap").click(function() {
-	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+	
+	$("#formlogin").animate({ "height": "toggle" }, { duration: 500 });
 	$("#formsignup").css("display","none");
+	$("#txt-form-username").focus();
 });
 
 $("#btn-form-create-account").click(function() {
-	$("#formsignup").animate({ "height": "toggle" }, { duration: 400 });
-	$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+	$("#formsignup").animate({ "height": "toggle" }, { duration: 500 });
+	$("#formlogin").animate({ "height": "toggle" }, { duration: 500 });
+	$("#txt-signup-username").focus();
 });
 function TOEnglish () {
 	$("#btn-form-sign-up").val("Sign Up");
@@ -149,7 +152,6 @@ $(document).ready(function() {
 $("#logo1").click(function() {
 	location.reload();
 });
-// $(function() {  alert("asdsad");    })
 
 
 

@@ -17,25 +17,16 @@
 			<div id="title">
 				Hãy Điền Câu Trả Lời Chính xác !!
 			</div>
-			<div class="menu-button">
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
-				<div class="but-item">abc</div>
+			<div class="menu-button" value='<?php echo $_GET['nameuser']; ?>'>
+				<?php include('../php/getquestion.php') ?>
 			</div>
 			<div id="question">My Question Is ....</div>
 			<textarea name="" id="answer" cols="35" placeholder="My Answer Is...." rows="8"></textarea>
 			<div style="clear: both;"></div>
-			<input type="button" id="result" value="aaaaaaaaaaaaaaaaa">
+			<input type="button" id="result" value="">
 			<input type="button" id="check" value="Kiểm Tra">
 		</div>
 	</div>
-
+	<script src="../java/myexam.js"></script>
 </body>
 </html>

@@ -3,8 +3,6 @@ $(function(){
 	$("#btn-form-login").click(function() {
 		checkuser($("#txt-form-username").val(),$("#txt-form-pass").val());
 	});
-
-
 	$("#btn-form-sign-up").click(function() {
 		if($("#txt-signup-username").val()==""||$("#txt-signup-pass").val()==""||$("#txt-signup-repass").val()==""){
 			alert("Hãy Nhập Đủ Thông Tin");
@@ -16,7 +14,14 @@ $(function(){
 		}
 	});
 	$('.item').click(function() {
-		alert($(this).attr('value'));
+		if($(this).attr('value')>$('.level').text()){
+			alert("Level Quá Thấp , Hãy Hoàn Thành Mức Thấp Hơn");
+		}
+		else{
+			window.location = 'exam.php?idlevel='+$(this).attr('value')+'&nameuser='+$("#getuserforexam").text();
+		}
+
+		
 	});
 });
 
@@ -68,6 +73,7 @@ function checkuser (username1,passw1) {
 				$("#txt-form-pass").val('');
 			}
 			alert(kq);
+			$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
 		}
 	}
 	http.open('GET', 'php/checkuser.php?q='+name+'&w='+pass, true);

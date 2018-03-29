@@ -11,16 +11,15 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-	<?php
-	include('../php/getDetailUser.php');
-	 ?>
+	<?php 
+	include('../php/getDetailUser.php') ?>
 	<div class="wraper">
 		<div class="container">	
-			<h1 ><strong>Hãy Chọn bài Học : <?php  echo $user; ?></strong>  </h1>
+			<h1 ><strong>Hãy Chọn bài Học : <strong id="getuserforexam"><?php   echo $username; ?></strong></strong>  </h1>
 			<div class="col-lg-6" id="left1">
 				<?php
 				include('../php/getItemLevel.php'); 
-				 ?>
+				?> 
 			</div>
 			<div class="col-lg-4" id="right1">
 				<div class="row">
@@ -33,7 +32,6 @@
 				</div>
 			</div>
 		</div>
-
 
 	</div>
 	<script src="../java/database.js">
