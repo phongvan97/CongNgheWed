@@ -27,21 +27,51 @@ $('#check').click(function() {
 		//tra loi xong
 		CheckAnswer ();
 		//Lưu và thoát
-		
-
+		SaveAndOut($('.menu-button').attr('value'),diemcong);
 	}
-			$('#answer').val('');
+	$('#answer').val('');
 
 });
+
+function SaveAndOut (name,score) {
+	// alert(name+score);
+	var http=new XMLHttpRequest();
+	http.onreadystatechange=function(){
+		if(http.readyState==4 && http.status==200){
+			var kq=http.responseText.split(' ');
+			var lv=kq[0];
+			var sc=kq[1];
+			if(diemcong>=9){
+				lv++;
+			}else if (diemcong<0&&lv>1) {
+				lv--;
+			}	
+			sc=parseInt(sc)+parseInt(diemcong);
+			SaveDataUser(name,lv,sc);
+		}
+	}
+	http.open('GET','../php/getCurrentLevelScore.php?ha='+name,true);
+	http.send();
+}
+function SaveDataUser (name,lv,sc) {
+	var http=new XMLHttpRequest();
+	http.onreadystatechange=function(){
+		if(http.readyState==4 && http.status==200){
+			var kq=http.responseText;
+			alert(kq);
+		}
+	}
+	http.open('GET','../php/Savedata.php?a='+name+'&b='+lv+'&c='+sc,true);
+	http.send();
+}
 function CheckAnswer () {
-				if($('#answer').val()==answer){
-				$("#result").val("Đúng CMNR");
-				diemcong++;
-			}else{
-				$("#result").val('Sai, Đáp Án : '+answer);
-				diemcong--;
-				alert(diemcong);
-			}
+	if($('#answer').val()==answer){
+		$("#result").val("Đúng , Xin Chúc Mừng");
+		diemcong++;
+	}else{
+		$("#result").val('Sai, Đáp Án : '+answer);
+		diemcong--;
+	}
 }
 function getQuestion (id) {
 	// alert(id);
@@ -49,12 +79,12 @@ function getQuestion (id) {
 	var http=new XMLHttpRequest();
 	http.onreadystatechange=function(){
 		if(http.readyState==4 && http.status==200){
-		var kq=http.responseText.split('-');
-		question=kq[0];
-		answer=kq[1];
-		$("#question").text(question);
+			var kq=http.responseText.split('-');
+			question=kq[0];
+			answer=kq[1];
+			$("#question").text(question);
+		}
 	}
-}
-http.open('GET','../php/getQuesDetail.php?hi='+Qid,true);
-http.send();
+	http.open('GET','../php/getQuesDetail.php?hi='+Qid,true);
+	http.send();
 }

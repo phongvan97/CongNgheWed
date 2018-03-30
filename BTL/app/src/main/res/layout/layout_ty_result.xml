@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/ty_2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="150dp">
+        <ImageView
+            android:background="@drawable/test"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:background="@drawable/test"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_ty_result_1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ty_2"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Your score :100aa"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txt_ty_result_2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_ty_result_1"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Your score :10áddddddddddddddddddddddddddddddddddddddddddddddddddđ0aa"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_ty_result_2"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:text=" Note :Hình Thức Bói bài này nên sử dụng khi có những khúc mắc trong tình yêu hoặc xuất hiện băn khoăn, chưa thể đưa ra quyết định của mình trong mỗi quan hệ với người kia"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
