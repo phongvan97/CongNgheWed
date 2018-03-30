@@ -57,8 +57,6 @@ function createAccount (user,pass) {
 	}
 	http.open('GET', 'php/creat.php?a='+name+"&b="+passw, true);
 	http.send();
-	
-
 }
 function checkuser (username1,passw1) {
 	var name=username1;
