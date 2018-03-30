@@ -41,12 +41,13 @@ function SaveAndOut (name,score) {
 			var kq=http.responseText.split(' ');
 			var lv=kq[0];
 			var sc=kq[1];
-			if(diemcong>=9){
+			sc=parseInt(sc)+parseInt(diemcong);
+			if(diemcong>=9&&sc>0){
 				lv++;
 			}else if (diemcong<0&&lv>1) {
 				lv--;
 			}	
-			sc=parseInt(sc)+parseInt(diemcong);
+
 			SaveDataUser(name,lv,sc);
 		}
 	}
@@ -58,14 +59,15 @@ function SaveDataUser (name,lv,sc) {
 	http.onreadystatechange=function(){
 		if(http.readyState==4 && http.status==200){
 			var kq=http.responseText;
-			alert(kq);
+			alert(kq+"\nBạn Đạt Được "+diemcong+" Điểm");
+			window.location = '../view/levelbaihoc.php?phong='+name;
 		}
 	}
 	http.open('GET','../php/Savedata.php?a='+name+'&b='+lv+'&c='+sc,true);
 	http.send();
 }
 function CheckAnswer () {
-	if($('#answer').val()==answer){
+	if($('#answer').val().toLowerCase()==answer){
 		$("#result").val("Đúng , Xin Chúc Mừng");
 		diemcong++;
 	}else{

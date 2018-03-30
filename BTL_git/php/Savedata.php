@@ -13,7 +13,7 @@ if(!$link){
 	$sql="UPDATE user SET level = '$level', score = '$score' WHERE user.username = '$name'";
 		$kq=mysqli_query($link,$sql);
 		if($kq===true){
-			echo 'thanh cong';
+			echo 'Cập Nhật Thành Công';
 		}else{
 			echo "That bai";
 		}
