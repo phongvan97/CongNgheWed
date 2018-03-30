@@ -12,16 +12,22 @@
 	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
+	background-color: #d4f052;
+	border: 1px solid red;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-radius: 20px;
 }
 #title{
 	background-color: red;
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
+	background-color: #69bdee;
+	border-radius: 25%;
+	
 }
-div{
-	border: 1px solid red;
-}
+
 #answer{
 	padding-top: 20px;
 	padding-left: 25px;
@@ -29,6 +35,7 @@ div{
 	font-size: 30px;
 	margin-left: 25%;
 	margin-top: 5%;
+	background-color: #dadcd2;
 }
 #answer:focus{
 	outline:  none;
@@ -36,16 +43,24 @@ div{
 .menu-button{
 	width: 100%;
 	height: 50px;
+	margin-top: 30px;
+	color: blue;
+	
+
 }
 .but-item{
+<<<<<<< HEAD
 	border: 1px solid gray;
 	margin-left: 10px;
+=======
+	margin-left: 30px;
+>>>>>>> 5affc65a02e43dfe08627ca020a9c33f7a1e393b
 	float: left;
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 	line-height: 40px;
-	width: 100px;
+	width: 150px;
 	height: 100%;
 	border-radius: 20px;
 }
@@ -60,6 +75,7 @@ div{
 	font-weight: bold;
 	width: 65%;
 	height: 15%;
+	background-color: #efc7ee;
 }
 #check{
 	/* margin-top: 100px; */
