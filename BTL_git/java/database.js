@@ -20,8 +20,6 @@ $(function(){
 		else{
 			window.location = 'exam.php?idlevel='+$(this).attr('value')+'&nameuser='+$("#getuserforexam").text();
 		}
-
-		
 	});
 });
 
