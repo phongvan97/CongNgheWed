@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 30, 2018 lúc 04:50 PM
+-- Thời gian đã tạo: Th3 31, 2018 lúc 11:00 AM
 -- Phiên bản máy phục vụ: 10.1.30-MariaDB
--- Phiên bản PHP: 5.6.33
+-- Phiên bản PHP: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -43,7 +43,7 @@ INSERT INTO `level` (`id`, `namelevel`, `image`) VALUES
 (2, 'Cơ Bản 2', '\'../image/chick.png\''),
 (3, 'Món ăn', '\'../image/food.png\''),
 (4, 'Số Nhiều', '\'../image/bee.png\''),
-(5, 'Sở Hữu', '\'../image/box.png\''),
+(5, 'Hàng Hóa', '\'../image/box.png\''),
 (6, 'Quần Áo', '\'../image/tie.png\''),
 (7, 'Màu Sắc', '\'../image/color.png\''),
 (8, 'Động từ', '\'../image/run.png\'');
@@ -95,7 +95,57 @@ INSERT INTO `question` (`id`, `level`, `myquestion`, `myanswer`) VALUES
 (40, 3, 'Dịch \" tôi ăn một quả táo \"', 'i eat an apple'),
 (41, 3, 'Điền từ đúng với \" Thịt bò :', 'beef'),
 (42, 3, 'Điền từ đúng với \" socola \"', 'chocolate'),
-(43, 3, 'Dịch \" Tôi thích ăn bánh \"', 'i like eat cake');
+(43, 3, 'Dịch \" Tôi thích ăn bánh \"', 'i like eat cake'),
+(44, 4, 'Điền từ đúng với \"Những cái bánh\" ', 'cakes'),
+(45, 4, 'Dịch \" Tôi có 3 cái oto \"\r\n', 'I have three cars'),
+(46, 4, 'Dịch \"I buy six apples\"', 'tôi mua sáu quả táo'),
+(47, 4, 'Điền từ đúng với \"5 con lợn\"', 'five pigs'),
+(48, 4, 'Điền từ đúng với \"những cái bút chì\"', 'pencils'),
+(49, 4, 'Điền từ đúng với \"những con cừu\"', 'sheep'),
+(50, 4, 'Điền từ đúng với \"những con sói\"', 'wolves'),
+(51, 4, 'Điền từ đúng với \"những củ khoa tây\"', 'potatoes'),
+(52, 4, 'dịch câu: \"đây là những cái đồng hồ\" ', 'there are watches'),
+(53, 4, 'Điền từ đúng với \"3 cái điện thoại \"', 'three phones'),
+(54, 5, 'Điền từ đúng với \"người sản xuất\"', 'producer'),
+(55, 5, 'Dịch \"tôi mua 3 chai nước\"', 'I bought three bottles of water'),
+(56, 5, 'Điền từ đúng với \"washing powder\"', 'bột giặt'),
+(57, 5, 'Điền từ đúng với \"dầu gội\"', 'shampoo'),
+(58, 5, 'Dịch \"tôi muốn đi siêu thị\"', 'i want to go supermarket'),
+(59, 5, 'Dịch \"tôi đi siêu thị để mua rau\"', 'i go to the supermarket to buy vegetable '),
+(60, 5, 'Điền từ đúng với \"snack\"', 'đồ ăn nhanh'),
+(61, 5, 'Điền từ đúng với \"máy tính\"', 'computer'),
+(62, 5, 'Dịch \"Tôi có một cái bút\"', 'i have a pen'),
+(63, 5, 'Điền từ đúng với \"giày\"', 'shoe'),
+(64, 6, 'Điền từ đúng với \"apron\"', 'tạp dề'),
+(65, 6, 'Điền từ đúng với \"áo khoác\"', 'coat'),
+(66, 6, 'Điền từ đúng với \"umbrella\"', 'cái ô'),
+(67, 6, 'Điền từ đúng với \"shirt\"', 'áo sơ mi'),
+(68, 6, 'Điền từ đúng với \"quần bò\"', 'jeans'),
+(69, 6, 'Điền từ đúng với \"comb\"', 'cái lược'),
+(70, 6, 'Điền từ đúng với \"mirror\"', 'gương'),
+(71, 6, 'Điền từ đúng với \"cà vạt\"', 'tie'),
+(72, 6, 'Điền từ đúng với \"jumper\" ', 'áo len'),
+(73, 6, 'Điền từ đúng với \"quần áo ngủ\"', 'pyjamas'),
+(74, 7, 'Điền từ đúng với \"màu đỏ\"', 'red'),
+(75, 7, 'Điền từ đúng với \"màu xanh da trời\"', 'blue'),
+(76, 7, 'Điền từ đúng với \"màu xanh lá cây\"', 'greeen'),
+(77, 7, 'Điền từ đúng với \"màu vàng\"', 'yellow'),
+(78, 7, 'Điền từ đúng với \"màu tím\"', 'violet'),
+(79, 7, 'Điền từ đúng với \"màu đen\"', 'black'),
+(80, 7, 'Điền từ đúng với \" màu trắng \"', 'white'),
+(81, 7, 'Điền từ đúng với \"màu hồng\"', 'pink'),
+(82, 7, 'Điền từ đúng với \" màu nâu \"', 'brown'),
+(83, 7, 'Điền từ đúng với \"màu ghi\"', 'gray'),
+(84, 8, 'Điền từ đúng với \"bay\"', 'fly'),
+(85, 8, 'Điền từ đúng với \"nhảy\"', 'jump'),
+(86, 8, 'Điền từ đúng với \"cười\"', 'smile'),
+(87, 8, 'Điền từ đúng với \"khóc\"', 'cry'),
+(88, 8, 'Điền từ đúng với \"walk\"', 'đi bộ'),
+(89, 8, 'Điền từ đúng với \"chạy\"', 'run'),
+(90, 8, 'Điền từ đúng với \"punch\"', 'đấm'),
+(91, 8, 'Điền từ đúng với \"play\"', 'chơi'),
+(92, 8, 'Điền từ đúng với \"sleep\"', 'ngủ'),
+(93, 8, 'Điền từ đúng với \"learn\"', 'học');
 
 -- --------------------------------------------------------
 
@@ -123,7 +173,9 @@ INSERT INTO `user` (`id`, `username`, `password`, `level`, `score`) VALUES
 (6, '1', '1', 1, 1),
 (7, 'ahihi', 'ahaha', 1, 1),
 (8, 'tung', '1941997', 2, 0),
-(9, 'son', '123456', 3, 0);
+(9, 'son', '123456', 3, 0),
+(12, 'tung2', '1234546', 4, 0),
+(13, 'admin', 'admin', 8, 50);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -164,13 +216,13 @@ ALTER TABLE `level`
 -- AUTO_INCREMENT cho bảng `question`
 --
 ALTER TABLE `question`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
 
 --
 -- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
