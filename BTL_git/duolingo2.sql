@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th3 31, 2018 lúc 11:00 AM
--- Phiên bản máy phục vụ: 10.1.30-MariaDB
--- Phiên bản PHP: 7.2.2
+-- Thời gian đã tạo: Th4 01, 2018 lúc 04:01 PM
+-- Phiên bản máy phục vụ: 10.1.31-MariaDB
+-- Phiên bản PHP: 7.2.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -39,14 +39,14 @@ CREATE TABLE `level` (
 --
 
 INSERT INTO `level` (`id`, `namelevel`, `image`) VALUES
-(1, 'Cơ Bản 1', '\'../image/egg.png\''),
-(2, 'Cơ Bản 2', '\'../image/chick.png\''),
-(3, 'Món ăn', '\'../image/food.png\''),
-(4, 'Số Nhiều', '\'../image/bee.png\''),
-(5, 'Hàng Hóa', '\'../image/box.png\''),
-(6, 'Quần Áo', '\'../image/tie.png\''),
-(7, 'Màu Sắc', '\'../image/color.png\''),
-(8, 'Động từ', '\'../image/run.png\'');
+(1, 'Cơ Bản 1', '../image/egg.png'),
+(2, 'Cơ Bản 2', '../image/chick.png'),
+(3, 'Món ăn', '../image/food.png'),
+(4, 'Số Nhiều', '../image/bee.png'),
+(5, 'Hàng Hóa', '../image/box.png'),
+(6, 'Quần Áo', '../image/tie.png'),
+(7, 'Màu Sắc', '../image/color.png'),
+(8, 'Động từ', '../image/run.png');
 
 -- --------------------------------------------------------
 
