@@ -63,13 +63,18 @@ function checkuser (username1,passw1) {
 	http.onreadystatechange=function() {
 		if(http.readyState==4 && http.status==200){
 			var kq=http.responseText;
+			alert(kq);
+
 			if(kq!="Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng"){
 				$("#nameuser").val(name);
 				$("#txt-form-username").val('');
 				$("#txt-form-pass").val('');
+				$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
+				if(name==='Admin')
+				{
+					window.location='view/VAdmin.php';
+				}
 			}
-			alert(kq);
-			$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
 		}
 	}
 	http.open('GET', 'php/checkuser.php?q='+name+'&w='+pass, true);

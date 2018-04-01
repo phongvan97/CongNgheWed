@@ -10,7 +10,7 @@ if(!$link){
 		if(mysqli_num_rows($kq)>0){
 			while ($row=mysqli_fetch_assoc($kq)){
 				$hienthi='<div class="item">
-				<div class="img" style="background-image: url('.$row['image'].');"></div>
+				<div class="img" style="background-image: url('."'".$row['image']."'".');"></div>
 				<div class="lv">Lv.'.$row['id'].'</div>
 				<div class="name">'.$row['namelevel'].'</div>
 				<button class="button"><span>Edit</span></button>

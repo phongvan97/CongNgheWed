@@ -8,9 +8,8 @@ if(!$link){
 	$sql="select * from level";
 	$kq=mysqli_query($link,$sql);
 	if(mysqli_num_rows($kq)>0){
-			
 		while ($row=mysqli_fetch_assoc($kq)) {
-			$hienthi='<div class="item" value="'.$row['id'].'"><div class="img-item" style="background-image:'." url(".$row['image'].');'.'"></div><p>'.$row['namelevel'].'</p></div>'.'<br>';
+			$hienthi='<div class="item" value="'.$row['id'].'"><div class="img-item" style="background-image:'." url("."'".$row['image']."'".');'.'"></div><p>'.$row['namelevel'].'</p></div>'.'<br>';
 			echo $hienthi;
 		}
 	}else{
@@ -21,5 +20,5 @@ if(!$link){
 	
 }
 
-	mysqli_close($link);
+mysqli_close($link);
 ?>
