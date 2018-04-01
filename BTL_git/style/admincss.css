@@ -1,0 +1,88 @@
+div{
+	text-align: center;
+	/* border: 1px solid red; */
+}
+.img{
+	background-size: 100% 100%;
+	float: left;
+	width: 150px;
+	height: 100%;
+}
+.name,.lv{
+	margin-left: 10%;
+	/* margin :0px auto;  */
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 150px;
+	height: 100%;
+	float:left;
+}
+.item{
+	border-radius: 25px;
+	background-color: #F3E7D1;
+	margin-top: 30px;
+	height: 150px;
+	box-shadow: 0 9px #999;
+}
+.item:hover{
+	cursor: pointer;
+	box-shadow: 0 4px #666;
+	transform: translateY(5px);
+}
+.Vlevel{
+	margin-top: 50px;
+}
+.button{
+	font-size: 20px;
+	outline: none;
+	transition: all 0.5s;
+	font-weight: bold;
+	background-color: #E36D43;
+	border-radius: 10px;
+	width: 100px;
+	height: 50px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 4%;
+}
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover span {
+	padding-right: 25px;
+}
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+.them{
+	display: none;
+}
+.them input{
+
+	margin-left: 150px;
+	/* display: inline; */
+}
+.item-ques{
+	margin-top: 20px;
+}
+#btn-them,#btn-themlv{
+	outline: none;
+	font-weight: bold;
+	font-size: 30px;
+	border-radius: 15px;
+	margin: 50px -200px;
+	width: 200px;
+	height: 50px;
+}

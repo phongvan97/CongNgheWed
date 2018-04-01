@@ -67,6 +67,7 @@
 	background-color: #AEE351;
 }
 #result{
+	cursor: not-allowed;
 	outline: none;
 	background-color: white;
 	border-radius: 25px;

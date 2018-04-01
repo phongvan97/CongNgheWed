@@ -14,7 +14,7 @@
 	<?php 
 	include('../php/getDetailUser.php') ?>
 	<div class="wraper">
-		<div class="container">	
+		<div class="container">
 			<h1 ><strong>Hãy Chọn bài Học : <strong id="getuserforexam"><?php   echo $username; ?></strong></strong>  </h1>
 			<div class="col-lg-6" id="left1">
 				<?php
