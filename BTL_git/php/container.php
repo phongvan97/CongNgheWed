@@ -48,5 +48,5 @@
  <div id="line4-cl2">
   <p id="line4-big"></p>
   <p id="line4-small"></p>
-  <a id="14" href="#"></a></div>
+  <a id="14" href="view/Vschool.html"></a></div>
 </div>
