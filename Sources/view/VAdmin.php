@@ -16,17 +16,15 @@
 	<div class="container">
 		<div style="font-weight: bold;font-size: 50px;margin-top: 100px;">Welcome Admin ^.^!</div>
 		<div class="Vlevel">
-			<div class="item">
-				<div class="img" style="background-image: url('../image/bee.png');"></div>
-				<div class="lv">123</div>
-				<div class="name">ádasdasd</div>
-				<button class="button"><span>Edit</span></button>
-				<button class="button"><span>Delete</span></button>
-			</div>
+
+			<!-- phần  Lấy các LV đã có Trong DB -->
 		</div>
 		<button id="btn-themlv" style="width: 500px;">THêm Level Cao Hơn</button>
+
+		<!-- phần form để thêm LV -->
+
 		<div class="them">
-			<div class="item-ques txtlv" value="123456">
+			<div class="item-ques txtlv">
 				Tên Level:
 				<input id="1" class="mytext" type="text"  placeholder="Name Level" >
 				Đường dẫn ảnh :
@@ -85,6 +83,7 @@
 			<button id="btn-them">Thêm</button>
 		</div>
 	</div>
+	<!-- file js Để xử lý tác vụ admin -->
 	<script src="../java/admin.js"></script>
 </body>
 </html>

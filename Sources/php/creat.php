@@ -1,6 +1,9 @@
 <?php
-$getname=$_GET['a'];
-$getpass=$_GET['b'];
+$getname=$_POST['a'];
+$getpass=$_POST['b'];
+
+
+// tạo tài khoản từ thông tin nhận được bằng phương thức GET
 require_once('config.php');
 $link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){

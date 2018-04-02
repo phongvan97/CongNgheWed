@@ -1,3 +1,4 @@
+<!-- dòng 1 -->
 <div class="line1">
  <img src="image/logo.png" alt="" id="logo">
  <div id="line1-text">
@@ -6,6 +7,8 @@
   <a id="4" href="#"></a>
 </div>
 </div>
+<!-- dòng 2 -->
+
 
 <div class="line2"> 
  <p id="5"></p>
@@ -23,6 +26,9 @@
    <p id="13" class="line2-small"></p></div>
  </div>
 
+
+
+<!-- dòng 3 -->
  <div class="line3"> 
    <div id="line3-cl1">
     <p id="line3-big"></p>
@@ -41,7 +47,7 @@
 </div>
 
 
-
+<!-- dòng 4 -->
 
 <div class="line4">
  <div id="line4-cl1"><img src="image/web.png" alt=""></div>

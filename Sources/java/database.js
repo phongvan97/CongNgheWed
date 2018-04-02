@@ -1,8 +1,10 @@
 
 $(function(){
+	//hiện và ẩn form login
 	$("#btn-form-login").click(function() {
 		checkuser($("#txt-form-username").val(),$("#txt-form-pass").val());
 	});
+	// thực hiện khi ấn nút đăng ký
 	$("#btn-form-sign-up").click(function() {
 		if($("#txt-signup-username").val()==""||$("#txt-signup-pass").val()==""||$("#txt-signup-repass").val()==""){
 			alert("Hãy Nhập Đủ Thông Tin");
@@ -13,6 +15,10 @@ $(function(){
 			createAccount($("#txt-signup-username").val(),$("#txt-signup-repass").val())
 		}
 	});
+
+
+
+	// kiểm tra lv hiện tại so với lv vừa chọn . nếu k đủ điều kiện thì thông báo
 	$('.item').click(function() {
 		if($(this).attr('value')>$('.level').text()){
 			alert("Level Quá Thấp , Hãy Hoàn Thành Mức Thấp Hơn");
@@ -22,22 +28,7 @@ $(function(){
 		}
 	});
 });
-
-// function getscore_level () {
-// 	var username='anh';
-// 	var http=new XMLHttpRequest();
-// 	http.onreadystatechange=function () {
-// 		if(http.readyState==4 && http.status==200){
-// 			var kq=http.responseText.split(' ');
-// 			alert(kq[0]+'b'+kq[1]);
-// 			$('.score').text(kq[1]);
-// 			$('.level').text(kq[0]);
-// 		}
-// 	}
-// 	http.open('GET','php/getDetailUser.php?m='+username,true);
-// 	http.send();
-// }
-
+// hàm tạo Tài Khoản Sử dụng Ajax nhận vào name pass rồi gửi cho file pho xử lý
 function createAccount (user,pass) {
 	var name =user;
 	var passw =pass;
@@ -53,9 +44,12 @@ function createAccount (user,pass) {
 			alert(kq);
 		}
 	}
-	http.open('GET', 'php/creat.php?a='+name+"&b="+passw, true);
-	http.send();
+	var x='a='+name+"&b="+passw;
+	http.open('POST', 'php/creat.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send(x);
 }
+//Hàm Kiểm Tra Đăng nhập dùng Ajax nhận vào name pass rồi gửi cho file pho xử lý
 function checkuser (username1,passw1) {
 	var name=username1;
 	var pass=passw1;
@@ -72,11 +66,14 @@ function checkuser (username1,passw1) {
 				$("#formlogin").animate({ "height": "toggle" }, { duration: 400 });
 				if(name==='Admin')
 				{
+					// Nếu Đăng nhập thành công băng admin thì chuyển sang trang ad min
 					window.location='view/VAdmin.php';
 				}
 			}
 		}
 	}
-	http.open('GET', 'php/checkuser.php?q='+name+'&w='+pass, true);
-	http.send();
+	var x='q='+name+'&w='+pass;
+	http.open('POST', 'php/checkuser.php', true);
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	http.send(x);
 }

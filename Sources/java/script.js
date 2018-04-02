@@ -1,4 +1,7 @@
+//hiện text theo tiếng việt
 ToVnese();
+
+// tạo hiệu ứng khi hover vào các nứt
 var ios=document.getElementById('btnIOS');
 ios.onmouseover=function change(){
 	var img=document.getElementById('imgIOS');
@@ -33,6 +36,8 @@ $("#btnANDROID").mousedown(function() {
 	$(this).css("background-color", "#1C8DFF");
 });
 
+
+//hiện , ẩn phần menu language
 $('.divhover').click(function() {
 	$("#listtest").animate({ "height": "toggle" }, { duration: 400 });
 });
@@ -41,18 +46,23 @@ $('#listtest').hover(function() {
 	$(this).show();
 }, function() {
 });
+
+// hiện form đăng nhập
 $("#btn-dangnhap").click(function() {
 	
 	$("#formlogin").animate({ "height": "toggle" }, { duration: 500 });
 	$("#formsignup").css("display","none");
 	$("#txt-form-username").focus();
 });
-
+// hiện form đăng ký
 $("#btn-form-create-account").click(function() {
 	$("#formsignup").animate({ "height": "toggle" }, { duration: 500 });
 	$("#formlogin").animate({ "height": "toggle" }, { duration: 500 });
 	$("#txt-signup-username").focus();
 });
+
+
+// hàm chuyển đổi tiếng anh
 function TOEnglish () {
 	$("#btn-form-sign-up").val("Sign Up");
 	$("#btn-form-create-account").val("Create an account");
@@ -85,7 +95,7 @@ function TOEnglish () {
 	$("#14").text("Bring Duolingo to your classroom");
 	$("#15").text("Learn English with Duolingo.");
 }
-
+// hàm chuyển đổi tiếng việt
 function ToVnese () {
 	$("#btn-form-sign-up").val("Đăng Ký");
 	$("#btn-form-create-account").val("Tạo Tài Khoản");
@@ -118,6 +128,8 @@ function ToVnese () {
 	$("#14").text("Mang Duolingo vào lớp học của bạn");
 	$("#15").text("Học Tiếng Anh với Duolingo.");
 }
+
+//click menu language
 $("#btnE").click(function() {
 	TOEnglish();
 });
@@ -126,7 +138,7 @@ $("#btnV").click(function() {
 	ToVnese();
 });
 
-disapear();
+// phần video
 function disapear () {
 	$("#test10").css({display: 'none'});
 	$("#video1").trigger('pause');
@@ -140,6 +152,7 @@ $("#4").click(function() {
 	$("#video1").css('display', 'block');
 });
 
+
 $(document).ready(function() {
 
 	$(".2").click(function() {
@@ -149,6 +162,8 @@ $(document).ready(function() {
 	});
 
 });
+
+//reload khi ấn vào logo
 $("#logo1").click(function() {
 	location.reload();
 });

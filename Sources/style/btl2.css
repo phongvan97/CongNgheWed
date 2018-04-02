@@ -68,7 +68,6 @@
 	height: 100%;
 }
 .header #image img{
-	/* display: inline; */
 	margin-top: 5%;
 	margin-left: 5%;
 	width: 500px;
@@ -179,15 +178,6 @@
 ul{
 	list-style: none;
 }
-/* #listtest button:active,#listtest button,#listtest button:focus,input:active,input:visited,input:focus{
-	outline: none;
-	border: none;
-}
-
-.line3 button:focus {
-	outline: none;
-	border: none;
-} */
 button,input{
 	outline: none;
 }

@@ -4,6 +4,7 @@ $link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
 	echo 'ket noi khong thanh cong';
 } else{
+	// lấy lv từ DB
 	mysqli_set_charset($link,'UTF8');
 	$sql="select * from level";
 	$kq=mysqli_query($link,$sql);
@@ -15,10 +16,6 @@ if(!$link){
 	}else{
 		echo "khong co ban ghi nao";
 	}
-
-
-	
 }
-
 mysqli_close($link);
 ?>

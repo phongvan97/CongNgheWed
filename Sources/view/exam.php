@@ -18,6 +18,7 @@
 				Hãy Điền Câu Trả Lời Chính xác !!
 			</div>
 			<div class="menu-button" value='<?php echo $_GET['nameuser']; ?>'>
+				<!-- lấy các câu hỏi từ DB -->
 				<?php include('../php/getquestion.php') ?>
 			</div>
 			<div id="question">My Question Is ....</div>
@@ -27,6 +28,7 @@
 			<input type="button" id="check" value="Kiểm Tra">
 		</div>
 	</div>
+	<!-- file js xử lý phần bài tập -->
 	<script src="../java/myexam.js"></script>
 </body>
 </html>

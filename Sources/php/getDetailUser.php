@@ -5,6 +5,7 @@ $link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
 	echo 'ket noi khong thanh cong';
 }else{
+	// lấy lv và score để hiển thị trên trang level
 	mysqli_set_charset($link,'UTF8');
 	$sql="select * from user where username='$username'";
 	$kq=mysqli_query($link,$sql);

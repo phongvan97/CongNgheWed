@@ -1,3 +1,4 @@
+<!-- phần footer -->
 <div class="bottom">
   <div id="image1">
    <p id="15" ></p>

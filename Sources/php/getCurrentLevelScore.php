@@ -5,6 +5,7 @@ $link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
 	echo 'ket noi that bai';
 }else{
+	// lấy ra level và score dựa trên username để cập nhật sau exam
 	mysqli_set_charset($link,'UTF8');
 	$sql="select * from user where username='$name'";
 	$kq=mysqli_query($link,$sql);

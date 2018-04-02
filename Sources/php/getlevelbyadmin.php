@@ -4,6 +4,7 @@ $link=mysqli_connect($host,$user,$pass,$db);
 if(!$link){
 	echo 'ket noi that bai';
 }else{
+	//lấy các item level cho trang admin
 	mysqli_set_charset($link,'UTF8');
 	$sql="select * from  level";
 		$kq=mysqli_query($link,$sql);
