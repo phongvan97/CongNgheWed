@@ -138,6 +138,7 @@ $("#btnV").click(function() {
 	ToVnese();
 });
 
+disapear();
 // phần video
 function disapear () {
 	$("#test10").css({display: 'none'});
@@ -160,15 +161,35 @@ $(document).ready(function() {
 		$("html, body").animate({scrollTop: 0}, 800);
 		return false;
 	});
-
+	$("#txt-form-pass").keyup(function(event) {
+		if (event.keyCode === 13) {
+			$("#btn-form-login").click();
+		}
+	})
+	$("#txt-form-username").keyup(function(event) {
+		if (event.keyCode === 13) {
+			$("#btn-form-login").click();
+		}
+	})
+	$("#txt-signup-username").keyup(function(event) {
+		if (event.keyCode === 13) {
+			$("#btn-form-sign-up").click();
+		}
+	})
+	$("#txt-signup-pass").keyup(function(event) {
+		if (event.keyCode === 13) {
+			$("#btn-form-sign-up").click();
+		}
+	})
+	$("#txt-signup-repass").keyup(function(event) {
+		if (event.keyCode === 13) {
+			$("#btn-form-sign-up").click();
+		}
+	})
 });
-
 //reload khi ấn vào logo
 $("#logo1").click(function() {
 	location.reload();
 });
-
-
-
 
 

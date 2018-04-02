@@ -7,8 +7,8 @@ if(!$link){
 } else{
 	mysqli_set_charset($link,'UTF8');
 	$sql="select * from question where id='$id'";
-		$kq=mysqli_query($link,$sql);
-		if(mysqli_num_rows($kq)>0){
+	$kq=mysqli_query($link,$sql);
+	if(mysqli_num_rows($kq)>0){
 		while ($row=mysqli_fetch_assoc($kq)){
 			$hienthi=$row['myquestion'].'-'.$row['myanswer'];
 			echo $hienthi;
@@ -18,4 +18,4 @@ if(!$link){
 	}
 }
 mysqli_close($link);
- ?>
+?>

@@ -66,7 +66,7 @@
 				<input id="2" type="text" placeholder="Answer">
 			</div>
 			<div class="item-ques txtqueslevel">
-				Câu 8:-
+				Câu 8:
 				<input id="1" type="text" placeholder="Question">
 				<input id="2" type="text" placeholder="Answer">
 			</div>

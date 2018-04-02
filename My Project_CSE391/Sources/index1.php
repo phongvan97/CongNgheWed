@@ -1,7 +1,7 @@
 <!DOCTYPE >
 <html>
 <head>
-	<title>BTLLLLLLLLLL</title>
+	<title>Duolingo !!!</title>
 	<meta name="name" content="content" charset="UTF8">
 	<link rel="stylesheet" href="style/btl2.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,19 +13,19 @@
 
 </head>
 <body>
-<div class="wrapper">
+	<div class="wrapper">
 		<div id="test10" ></div>
 		<video id="video1" src="video/clip.mp4" controls loop autoplay preload="auto" ></video> 
-<?php include('php/line0.php'); ?> 
+		<?php include('php/line0.php'); ?> 
 
-<?php include('php/header.php'); ?> 
+		<?php include('php/header.php'); ?> 
 
-<?php include('php/container.php'); ?> 
+		<?php include('php/container.php'); ?> 
 
-<?php include('php/footer.php'); ?> 
+		<?php include('php/footer.php'); ?> 
 
-</div>
-<script src="java/script.js"></script>
-<script src="java/database.js"></script>
+	</div>
+	<script src="java/script.js"></script>
+	<script src="java/database.js"></script>
 </body>
 </html>
