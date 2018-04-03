@@ -1,6 +1,3 @@
-//hiện text theo tiếng việt
-ToVnese();
-
 // tạo hiệu ứng khi hover vào các nứt
 var ios=document.getElementById('btnIOS');
 ios.onmouseover=function change(){
@@ -138,7 +135,7 @@ $("#btnV").click(function() {
 	ToVnese();
 });
 
-disapear();
+
 // phần video
 function disapear () {
 	$("#test10").css({display: 'none'});
@@ -155,7 +152,9 @@ $("#4").click(function() {
 
 
 $(document).ready(function() {
-
+	//hiện text theo tiếng việt
+	ToVnese();
+	disapear();
 	$(".2").click(function() {
 		$("#image").load("view/vBaiHoc.html");
 		$("html, body").animate({scrollTop: 0}, 800);
