@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:background="#ECDCCD"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:id="@+id/flip_daily1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:flipDuration="1500"
+        app:flipEnabled="true">
+        <ImageView
+            android:id="@+id/flip_daily1_front"
+            android:src="@drawable/atb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/flip_daily1_back"
+            android:src="@drawable/backcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:visibility="gone"
+        android:id="@+id/flip_daily2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:flipOnTouch="true"
+        app:flipDuration="1500"
+        app:flipEnabled="true">
+        <ImageView
+            android:id="@+id/flip_daily2_front"
+            android:src="@drawable/atb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/flip_daily2_back"
+            android:src="@drawable/backcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+    <RelativeLayout
+        android:id="@+id/cards_daily"
+        android:background="@drawable/backcards"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp"
+        android:layout_height="150dp">
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/btn_daily_frag"
+        app:cardCornerRadius="25dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="70dp">
+        <TextView
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="Gieo Quẻ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+</layout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="#EFD6CF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:background="@drawable/poker"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="150dp"
+            android:layout_height="130dp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logo"
+            android:text="Sign In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:id="@+id/username"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:background="@drawable/user"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/txt_login_username"
+                android:hint="UserName"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/password"
+            android:layout_below="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:background="@drawable/key"
+                android:layout_width="80dp"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/txt_login_password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center_vertical"
+                android:hint="PassWord"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="#FFCE42"
+            app:cardCornerRadius="25dp"
+            android:id="@+id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/password"
+            android:layout_width="150dp"
+            android:layout_height="75dp">
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/login_ToDK"
+            android:textColor="#3F51B5"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="No Account Yet? Creat one"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="#ECDCCD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/ty_1"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="150dp">
+            <com.wajahatkarim3.easyflipview.EasyFlipView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/flipTY1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:flipOnTouch="false"
+                app:flipDuration="1000"
+                app:flipEnabled="true"
+                >
+                <ImageView
+                    android:id="@+id/flip_TY_1_front"
+                    android:src="@drawable/atb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/flip_TY_1_back"
+                    android:src="@drawable/backcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.wajahatkarim3.easyflipview.EasyFlipView>
+            <com.wajahatkarim3.easyflipview.EasyFlipView
+                android:id="@+id/flipTY2"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:flipOnTouch="false"
+                app:flipDuration="1000"
+                app:flipEnabled="true">
+                <ImageView
+                    android:id="@+id/flip_TY_2_front"
+                    android:src="@drawable/atb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/flip_TY_2_back"
+                    android:src="@drawable/backcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.wajahatkarim3.easyflipview.EasyFlipView>
+        </RelativeLayout>
+        <android.support.v7.widget.CardView
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_tinhyeu_frag"
+            app:cardCornerRadius="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="80dp">
+            <TextView
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="Gieo Quẻ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</layout>

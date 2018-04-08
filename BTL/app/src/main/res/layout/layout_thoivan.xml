@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:background="#966D58"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/topPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="150dp">
+
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/flipTV1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:flipDuration="500"
+            app:flipEnabled="true"
+            >
+            <ImageView
+                android:id="@+id/img_thoivan1"
+                android:src="@drawable/atb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@drawable/backcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+        <com.wajahatkarim3.easyflipview.EasyFlipView
+            android:id="@+id/flipTV2"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            app:flipDuration="500"
+            app:flipEnabled="true">
+            <ImageView
+                android:id="@+id/img_thoivan2"
+                android:src="@drawable/atb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@drawable/backcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.wajahatkarim3.easyflipview.EasyFlipView>
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/btn_thoivan_kq"
+            android:text="Kết Quả"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+</layout>
