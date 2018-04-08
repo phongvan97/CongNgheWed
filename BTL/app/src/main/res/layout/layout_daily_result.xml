@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout
+<layout xmlns:android="http://schemas.android.com/apk/res/android"><RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <RelativeLayout
@@ -21,8 +19,7 @@
                 android:layout_marginRight="50dp"
                 android:layout_alignParentRight="true"
                 android:layout_width="100dp"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
+                android:layout_height="match_parent" /></RelativeLayout>
         <TextView
             android:gravity="center"
             android:id="@+id/txt_daily_title"
@@ -59,14 +56,4 @@
                 android:textSize="22sp"
                 android:text="132132"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content" />
-
-            </RelativeLayout>
-
-        </ScrollView>
-
-
-
-
-    </RelativeLayout>
-</layout>
+                android:layout_height="wrap_content" /></RelativeLayout></ScrollView></RelativeLayout></layout>

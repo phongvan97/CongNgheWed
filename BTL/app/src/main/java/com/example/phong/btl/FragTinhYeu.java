@@ -183,7 +183,7 @@ public class FragTinhYeu extends android.support.v4.app.Fragment implements Easy
                     FragTVresult fragTVresult = new FragTVresult();
                     fragTVresult.Setdata(arrCards.get(0).getImg()
                             , arrCards.get(1).getImg()
-                            , "Điểm Của Bạn :" + (Integer.parseInt(arrCards.get(0).getId()) + Integer.parseInt(arrCards.get(1).getId()))
+                            , arrCards.get(0).getNamecard()+" - "+arrCards.get(1).getNamecard()
                             , arrCards.get(1).getNamecard() + ": " + arrCards.get(1).getMean()
                             , arrCards.get(0).getNamecard() + ": " + arrCards.get(0).getMean());
                     getFragmentManager().beginTransaction()

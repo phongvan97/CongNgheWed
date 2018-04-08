@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
         android:weightSum="11"
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
-
         <RelativeLayout
             android:layout_weight="4"
             android:id="@+id/ty_2"
@@ -15,21 +13,15 @@
             android:layout_height="0dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp">
-
             <ImageView
                 android:id="@+id/img_TV1"
                 android:layout_width="100dp"
-                android:layout_height="match_parent"
-                />
-
+                android:layout_height="match_parent" />
             <ImageView
                 android:id="@+id/img_TV2"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                />
-        </RelativeLayout>
-
+                android:layout_alignParentRight="true" /></RelativeLayout>
         <TextView
             android:id="@+id/txt_ty_result_1"
             android:layout_width="200dp"
@@ -40,27 +32,22 @@
             android:text="Your score :100aa"
             android:textSize="18sp"
             android:textStyle="bold" />
-
         <ScrollView
             android:layout_weight="7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_below="@+id/txt_ty_result_1">
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
                 <TextView
                     android:id="@+id/txt_ty_result_2"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-
                     android:text="Your score :10áddddddddddddddddddddddddddddddddddddddddddddddddddđ0aa"
                     android:textSize="22sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/txt_ty_result_3"
                     android:layout_centerHorizontal="true"
@@ -69,18 +56,4 @@
                     android:textStyle="bold"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_ty_result_2" />
-                <!--<TextView-->
-                    <!--android:layout_below="@id/txt_ty_result_3"-->
-                    <!--android:layout_width="350dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text=" Note :Hình Thức Bói bài này nên sử dụng khi có những khúc mắc trong cuộc sống hoặc xuất hiện băn khoăn, chưa thể đưa ra quyết định của mình trong mỗi quan hệ xã hội"-->
-                    <!--android:textSize="15sp"-->
-                    <!--android:textStyle="italic" />-->
-            </RelativeLayout>
-        </ScrollView>
-
-    </LinearLayout>
-
-
-</layout>
+                    android:layout_below="@+id/txt_ty_result_2" /></RelativeLayout></ScrollView></LinearLayout></layout>

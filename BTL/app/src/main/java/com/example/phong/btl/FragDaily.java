@@ -138,14 +138,6 @@ public class FragDaily extends android.support.v4.app.Fragment implements View.O
                         public void onResponse(Call<List<Card>> call, Response<List<Card>> response) {
                             arrCards = (ArrayList<Card>) response.body();
                             if (arrCards.size() > 0) {
-                                Log.d("BBB", arrCards.get(0).getId());
-                                Log.d("BBB", arrCards.get(0).getNamecard());
-                                Log.d("BBB", arrCards.get(0).getMean());
-                                Log.d("BBB", arrCards.get(1).getId());
-                                Log.d("BBB", arrCards.get(1).getNamecard());
-                                Log.d("BBB", arrCards.get(1).getMean());
-
-
                                 Picasso.with(getContext()).load(arrCards.get(1).getImg()).into(binding.flipDaily1Front);
                                 Picasso.with(getContext()).load(arrCards.get(0).getImg()).into(binding.flipDaily2Front);
                             }
@@ -214,7 +206,6 @@ public class FragDaily extends android.support.v4.app.Fragment implements View.O
                     Toast.makeText(getContext(), "Lỗi Khi Lưu !!", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onFailure(Call<String> call, Throwable t) {
 

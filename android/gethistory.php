@@ -3,11 +3,13 @@ require('conect.php');
 $name=$_POST['user'];
 // $name='phong2';
 class History{
-	function History($type,$date,$namecard1,$namecard2){
+	function History($type,$date,$namecard1,$namecard2,$idcard1,$idcard2){
 		$this->type=$type;
 		$this->date=$date;
 		$this->card1=$namecard1;
 		$this->card2=$namecard2;
+		$this->id1=$idcard1;
+		$this->id2=$idcard2;
 	}
 }
 mysqli_set_charset($con,"UTF8");
@@ -42,7 +44,7 @@ if(strlen($name)>0){
 				}
 			}
 
-			array_push($manghis,new History($row['type'],$row['date'],$ten1,$ten2));
+			array_push($manghis,new History($row['type'],$row['date'],$ten1,$ten2,$row['card1'],$row['card2']));
 
 		}
 		if(count($manghis)>0){
